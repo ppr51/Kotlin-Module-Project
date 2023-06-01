@@ -45,21 +45,21 @@ fun <T : RecordInterface> requestToUserAboutNewName(
             var isExist = false;
             for (rec: T in lst) {
                 if (rec.name == newNameStr) {
-                    isExist = true;
-                    break;
+                    isExist = true
+                    break
                 }
             }
             if (isExist) {
                 println("Ошибка, Вы ввели существующее название! Попробуйте ещё раз")
             } else {
-                break; // название прошло проверки на корректность
+                break // название прошло проверки на корректность
             }
         } else {
             println("Ошибка, Вы ввели пустое название! Попробуйте ещё раз")
         }
         //очищаем перед новой попыткой
-        newNameStr = "";
+        newNameStr = ""
     }
-    return newNameStr;
+    return newNameStr
 }
 

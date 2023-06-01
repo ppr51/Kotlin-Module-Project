@@ -1,3 +1,3 @@
 data class ArchiveRecord( override var name: String) : RecordInterface {
-    var lstNotes : MutableList<NoteRecord> = mutableListOf()
+    var listNotes : MutableList<NoteRecord> = mutableListOf()
 }
